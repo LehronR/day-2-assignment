@@ -5,6 +5,7 @@
 #main-content-section {
     display: flex;
     justify-content: center;
+
 }
 #about-section {
     width: 1000px;
@@ -21,4 +22,5 @@ p {
     margin: 2em 0;
     line-height: 2em;
     font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
 }
