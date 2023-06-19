@@ -1,0 +1,24 @@
+/*________________________*/
+/*    ABOUT US SECTION    */
+/*________________________*/
+
+#main-content-section {
+    display: flex;
+    justify-content: center;
+}
+#about-section {
+    width: 1000px;
+    margin-bottom: 2em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    margin: .5em 0;
+}
+
+p {
+    margin: 2em 0;
+    line-height: 2em;
+    font-size: 1.1em;
+}

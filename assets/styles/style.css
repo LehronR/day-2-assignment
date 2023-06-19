@@ -1,0 +1,242 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --white-text: #fff;
+    --hover-text-color: red;
+}
+
+/*____________________________*/
+/*      HEADER SECTION        */
+/*____________________________*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+/* MAIN NAV */
+
+#main-nav {
+    height: 50px;
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0 3px 5px #aaa;
+}
+
+/* MAIN NAV LIST */
+
+#main-nav--list,
+#home-section,
+#link-section,
+#search-bar-section {
+    display: flex;
+    align-items: center;
+}
+
+#main-nav--list {
+    height: 100%;
+    list-style: none;
+}
+
+/* HOME SECTION */
+#home-section {
+    width: 15vw;
+}
+
+.main-nav--logo {
+    margin: 0 40px 0 20px;
+}
+
+.main-nav--logo img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+/* LINK SECTION */
+
+#link-section {
+    justify-content: space-evenly;
+    width: 40vw;
+}
+
+.main-nav--link {
+    color: var(--white-text);
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.inactive:hover {
+    color: var(--hover-text-color);
+    border: 3px solid darkred;
+    border-radius: 5px;
+    padding: 7px 17px;
+}
+
+.main-nav-link:visited {
+    color: var(--white-text);
+}
+
+.active {
+    padding:10px 20px;
+    background: linear-gradient(red, darkred);
+    color: var(--white-text);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #111;
+}
+
+.active:hover {
+    color: var(--white-text);
+    background: linear-gradient(darkred, red);
+}
+
+/* SEARCH BAR SECTION */
+
+#search-bar-section {
+    width: 25vw;
+}
+
+.main-nav--search input {
+    width: 20vw;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.main-nav--search img {
+    width: 20px;
+    padding: 2px;
+    vertical-align: middle;
+    background-color: red;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* ACCOUNT SECTION */
+
+#account-section {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    width: 20vw;
+    margin-right: 2.2em;
+}
+
+.main-nav--signin #signin,
+.main-nav--signin #create-account,
+.main-nav--cart #cart {
+    text-decoration: none;
+}
+
+.main-nav--signin #signin:hover,
+.main-nav--signin #create-account:hover,
+.main-nav--cart #cart:hover {
+    color: red;
+}
+
+.main-nav--signin #signin,
+.main-nav--signin #create-account,
+.main-nav--cart #cart,
+.main-nav--signin #signin:visited,
+.main-nav--signin #create-account:visited,
+.main-nav--cart #cart:visited {
+    color: var(--white-text);
+}
+
+/* CART */
+
+.main-nav--cart #cart img {
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/*__________________________*/
+/*      FOOTER SECTION      */
+/*__________________________*/
+
+/* ELEMENT STYLES */
+footer {
+    display: flex;
+    height: 100px;
+    background-color: #333;
+    align-items: center;
+}
+
+label {
+    display: block;
+}
+
+input[type="button"] {
+    display: inline;
+}
+
+/* FOOTER NAV SECTION */
+#footer-nav-section {
+    width: 50vw;
+}
+
+#footer-nav--list {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+    color: var(--white-text);
+}
+
+/* NEWSLETTER SECTION */
+#newsletter-section {
+    width: 50vw;
+    margin: 0 2.1em;
+}
+
+#newsletter--name,
+#newsletter--email,
+#newsletter--submit {
+    display: inline-block;
+}
+
+#newsletter--header {
+    margin-bottom: 5px;
+    color: var(--white-text);
+}
+
+#newsletter--name,
+#newsletter--email {
+    margin-right: 20px;
+    color: var(--white-text);
+}
+
+#name,
+#email {
+    width: 200px;
+    height: 25px;
+    font-size: 0.7em;
+}
+#btn {
+    padding: 5px 10px;
+    background: linear-gradient(red, darkred);
+    color: var(--white-text);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #222;
+    border: none;
+    vertical-align: middle;
+}
+
+#btn:hover {
+    padding: 5px 10px;
+    background: linear-gradient(darkred, red);
+    color: var(--white-text);
+    border-radius: 5px;
+    box-shadow: -1px 1px 3px #222;
+    border: none;
+    vertical-align: middle;
+}

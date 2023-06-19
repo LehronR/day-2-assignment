@@ -1,0 +1,31 @@
+/* ___________________ */
+/*   PRODUCT SECTION   */
+/* ___________________ */
+
+/* PRODUCT LIST */
+#product-section {
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px auto;
+    justify-content: center;
+}
+
+#product-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.product-img {
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 10px #bbb;
+}
+
+.product-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}

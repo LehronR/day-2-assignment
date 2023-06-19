@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmers</title>
+    <link type="text/css" rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/contact-us.css">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <ul id="main-nav--list">
+                <div id="home-section">
+                    <li class="main-nav--logo home"><a href="index.html"><img src="assets/imgs/logo placeholder.png" alt="DotWear Clothing Logo"></a></li>
+                    <li><a href="index.html" class="main-nav--link inactive">Home</a></li>
+                </div>
+                <div id="link-section">
+                    <li><a href="store.html" class="main-nav--link inactive">Store</a></li>
+                    <li><a href="about-us.html" class="main-nav--link inactive">About Us</a></li>
+                    <li><a href="contact-us.html" class="main-nav--link active">Contact Us</a></li>
+                </div>
+                <div id="search-bar-section">
+                    <li class="main-nav--search"><input type="search" ><img src="assets/imgs/icons/Search-icon.png" alt="Search Icon"></li>
+                </div>
+                <div id="account-section">
+                    <li class="main-nav--signin"><a href="#" id="signin">Sign In</a> / <a href="#" id="create-account">Create Account</a></li>
+                    <li class="main-nav--cart"><a href="#" id="cart">Cart<img src="assets/imgs/icons/shopping-cart-icon.svg" alt="Cart Icon"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content-section">
+        <section id="contact-section">
+            <form id="contact-form">
+                <div class="contact-form__call-to-action">
+                    <p>Have questions or just want to say hi?</p>
+                    <p>send us a message</p>
+                </div>
+                <div class="input-container">
+                    <div class="name-container">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter Name">
+                    </div>
+                    <div class="email-container">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Email">
+                    </div>
+                </div>
+                <div class="textarea-container">
+                    <label for="comment">Share your thoughts below:</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                </div>
+                
+                <div class="submit-btn-container">
+                    <input type="button" value="Send Message" class="submit-btn">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section id="footer-nav-section">
+            <ul id="footer-nav--list">
+                <li><a href="store.html" class="main-nav--link inactive">Store</a></li>
+                    <li><a href="about-us.html" class="main-nav--link inactive">About Us</a></li>
+                    <li><a href="contact-us.html" class="main-nav--link inactive">Contact Us</a></li>
+            </ul>
+        </section>
+        <section id="newsletter-section">
+            <h4 id="newsletter--header">Subscribe and stay connected with all the latest releases and sales</h4>
+            <div id="newsletter--name">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your name...">
+            </div>
+            <div id="newsletter--email">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter your best email...">
+            </div>
+            <div id="newsletter--submit">
+                <input type="button" value="Sign Up" id="btn">
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
