@@ -20,6 +20,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    color: #111;
 }
 
 
@@ -27,31 +28,18 @@ header {
 /* MAIN NAV */
 
 #main-nav {
-    height: 50px;
-    width: 100%;
     background-color: #333;
     box-shadow: 0 3px 5px #aaa;
 }
 
-/* MAIN NAV LIST */
+/* TOGGLER BUTTON */
 
-#main-nav--list,
-#home-section,
-#link-section,
-#search-bar-section {
-    display: flex;
-    align-items: center;
+.navbar-toggler {
+    border: 3px solid var(--white-text);
+    background-color: var(--white-text);
 }
 
-#main-nav--list {
-    height: 100%;
-    list-style: none;
-}
-
-/* HOME SECTION */
-#home-section {
-    width: 15vw;
-}
+/* LOGO SECTION */
 
 .main-nav--logo {
     margin: 0 40px 0 20px;
@@ -66,54 +54,55 @@ header {
 
 #link-section {
     justify-content: space-evenly;
-    width: 40vw;
+    width: 30vw;
 }
 
 .main-nav--link {
     color: var(--white-text);
-    padding: 10px 20px;
+    padding: 10px 23px;
     cursor: pointer;
     text-decoration: none;
 }
 
-.inactive:hover {
+.inactive-link:hover {
     color: var(--hover-text-color);
     border: 3px solid darkred;
     border-radius: 5px;
-    padding: 7px 17px;
+    padding: 10px 15px;
 }
 
 .main-nav-link:visited {
     color: var(--white-text);
 }
 
-.active {
-    padding:10px 20px;
+.active-link {
+    padding:5px 20px;
     background: linear-gradient(red, darkred);
     color: var(--white-text);
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 1px 1px 3px #111;
 }
 
-.active:hover {
+.active-link:hover {
     color: var(--white-text);
     background: linear-gradient(darkred, red);
 }
 
 /* SEARCH BAR SECTION */
 
-#search-bar-section {
-    width: 25vw;
-}
+/* #search-bar-section {
+    width: 30vw;
+} */
 
 .main-nav--search input {
-    width: 20vw;
-    height: 20px;
+    width: 25vw;
+    height: 25px;
     vertical-align: middle;
+    outline: none;
 }
 
 .main-nav--search img {
-    width: 20px;
+    width: 25px;
     padding: 2px;
     vertical-align: middle;
     background-color: red;
@@ -122,14 +111,6 @@ header {
 }
 
 /* ACCOUNT SECTION */
-
-#account-section {
-    display: flex;
-    flex-direction:column;
-    align-items: flex-end;
-    width: 20vw;
-    margin-right: 2.2em;
-}
 
 .main-nav--signin #signin,
 .main-nav--signin #create-account,
@@ -166,10 +147,7 @@ header {
 
 /* ELEMENT STYLES */
 footer {
-    display: flex;
-    height: 100px;
     background-color: #333;
-    align-items: center;
 }
 
 label {
@@ -182,7 +160,7 @@ input[type="button"] {
 
 /* FOOTER NAV SECTION */
 #footer-nav-section {
-    width: 50vw;
+    width: 80vw;
 }
 
 #footer-nav--list {
@@ -193,35 +171,15 @@ input[type="button"] {
     color: var(--white-text);
 }
 
-/* NEWSLETTER SECTION */
-#newsletter-section {
-    width: 50vw;
-    margin: 0 2.1em;
-}
-
-#newsletter--name,
-#newsletter--email,
-#newsletter--submit {
-    display: inline-block;
-}
-
 #newsletter--header {
-    margin-bottom: 5px;
-    color: var(--white-text);
+    display: flex;
+    align-items: center;
 }
 
-#newsletter--name,
-#newsletter--email {
-    margin-right: 20px;
-    color: var(--white-text);
+.signup-section {
+    width: 50%;
 }
 
-#name,
-#email {
-    width: 200px;
-    height: 25px;
-    font-size: 0.7em;
-}
 #btn {
     padding: 5px 10px;
     background: linear-gradient(red, darkred);
@@ -240,4 +198,10 @@ input[type="button"] {
     box-shadow: -1px 1px 3px #222;
     border: none;
     vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .signup-section {
+        display: none;
+    }
 }
